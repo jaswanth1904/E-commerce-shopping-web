@@ -43,7 +43,8 @@ Responsive Design: Fully responsive layout using custom CSS, ensuring compatibil
 
 
 Checkout Simulation: A streamlined checkout process to mimic real-world e-commerce workflows.
-![Uploading Screenshot (432).png…]()
+<img width="1920" height="1080" alt="Screenshot (432)" src="https://github.com/user-attachments/assets/afbfbb83-8472-481e-895c-00a3e3951cd7" />
+
 
 
 Technologies Used
@@ -72,6 +73,7 @@ Back-End (Optional)
 
 
 
+<img width="1920" height="1080" alt="Screenshot (433)" src="https://github.com/user-attachments/assets/d8cc82f2-e866-406f-9f2c-e852aa0fdfdd" />
 
 
 The project may integrate with a back-end service (e.g., Node.js, Firebase, or a REST API) to handle product data, user authentication, and order processing. If no back-end is included, product data is mocked or stored locally (e.g., in JSON files).
@@ -84,6 +86,7 @@ Authentication
 
 
 
+<img width="1920" height="1080" alt="Screenshot (434)" src="https://github.com/user-attachments/assets/46b997a7-550c-41f2-93a1-c3eef14922a5" />
 
 
 User Authentication: If implemented, the app supports user login and registration, potentially using a back-end service like Firebase Authentication or a custom API. This allows users to access personalized features such as saving cart items or viewing order history.
@@ -91,3 +94,5 @@ User Authentication: If implemented, the app supports user login and registratio
 
 
 If authentication is not implemented, the app operates in a guest mode with core e-commerce features available without login.
+<img width="1920" height="1080" alt="Screenshot (435)" src="https://github.com/user-attachments/assets/ffb172f2-2a17-4a82-a004-1e53f2fcd8a9" />
+
