@@ -1,0 +1,202 @@
+/* Base container styles */
+.contact-container {
+    display: flex;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Left contact info panel */
+.contact-info {
+    flex: 1;
+    background-color: #ff4d4d; /* Red background */
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info .icon {
+    font-size: 20px;
+}
+
+/* Right form panel */
+.contact-form {
+    flex: 2;
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.contact-form .subtitle {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #e04343;
+}
+
+.red-theme .theme-toggle {
+    background-color: #ff4d4d;
+}
+
+.red-theme .theme-toggle:hover {
+    background-color: #e04343;
+}
+
+.blue-theme .theme-toggle {
+    background-color: #007bff;
+}
+
+.blue-theme .theme-toggle:hover {
+    background-color: #0056b3;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input,
+.textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: #ff4d4d;
+}
+
+.red-theme .input:focus,
+.red-theme .textarea:focus {
+    border-color: #ff4d4d;
+}
+
+.blue-theme .input:focus,
+.blue-theme .textarea:focus {
+    border-color: #007bff;
+}
+
+.textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Error and success messages */
+.error {
+    color: #dc3545;
+    font-size: 14px;
+    margin: 0;
+}
+
+.success {
+    color: #28a745;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Submit button */
+.submit-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover:not(.button-disabled) {
+    background-color: #e04343;
+}
+
+.red-theme .submit-button {
+    background-color: #ff4d4d;
+}
+
+.red-theme .submit-button:hover:not(.button-disabled) {
+    background-color: #e04343;
+}
+
+.blue-theme .submit-button {
+    background-color: #007bff;
+}
+
+.blue-theme .submit-button:hover:not(.button-disabled) {
+    background-color: #0056b3;
+}
+
+.button-disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .submit-button {
+        width: 100%;
+        text-align: center;
+    }
+}

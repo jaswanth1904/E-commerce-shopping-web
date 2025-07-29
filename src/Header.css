@@ -1,0 +1,170 @@
+/* Base header styles */
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+/* Light theme */
+.header.light {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Dark theme */
+.header.dark {
+    background-color: #2a2a2a; /* A softer dark shade */
+    color: #e0e0e0;
+}
+
+/* Header container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-image {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-text {
+    font-family: 'Raleway', cursive;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff0000; /* Red accent color */
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff0000; /* Red accent on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.header.dark .nav-links a {
+    color: #e0e0e0;
+}
+
+.header.dark .nav-links a:hover {
+    color: #ff0000; /* Red accent on hover in dark mode */
+    text-decoration: none;
+}
+
+/* Header actions (search, theme toggle, user profile) */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Search button and theme toggle */
+.search-btn,
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.header.dark .search-btn,
+.header.dark .theme-toggle {
+    color: #e0e0e0;
+}
+
+.search-btn:hover,
+.theme-toggle:hover {
+    color: #ff0000; /* Red accent on hover */
+    text-decoration: none; /* Remove any underline/overline */
+}
+
+.header.dark .search-btn:hover,
+.header.dark .theme-toggle:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/* Search input */
+.search-input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.header.dark .search-input {
+    border-color: #555;
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #ff0000; /* Red accent on focus */
+}
+
+/* User profile */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-link {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.user-link:hover {
+    color: #ff0000; /* Red accent on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.header.dark .user-link {
+    color: #e0e0e0;
+}
+
+.header.dark .user-link:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/* Greeting text */
+.greeting-text {
+    font-size: 16px;
+    color: #333;
+}
+
+.header.dark .greeting-text {
+    color: #e0e0e0;
+}

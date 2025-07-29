@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.google-signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.google-signin-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.google-signin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.google-signin-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(66, 133, 244, 0.3);
+  background: linear-gradient(135deg, #3267d6 0%, #2e8b47 100%);
+}
+
+.google-signin-btn img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .google-signin-container {
+    padding: 2rem;
+    max-width: 450px;
+  }
+
+  .google-signin-title {
+    font-size: 2rem;
+  }
+
+  .google-signin-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .google-signin-btn img {
+    width: 28px;
+    height: 28px;
+  }
+}
